@@ -73,6 +73,11 @@ void mgos_http_server_set_document_root(const char *document_root);
 /* (Re) publish server DNS-SD instance. */
 void mgos_http_server_publish_dns_sd(void);
 #endif
+  
+/*
+ * Set extra headres to serve. (e.g cors heeaders)
+ */
+void mgos_http_server_set_extra_headers(const char *extra_headers);
 
 #if defined(__cplusplus)
 }
